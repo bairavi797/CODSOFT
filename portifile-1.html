@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bairavi Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      animation: fadeInDown 1.5s;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    /* Section */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #2c3e50;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #3498db;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* About */
+    #about img {
+      width: 160px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    #about p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.05rem;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .skills-list li {
+      list-style: none;
+      background: white;
+      padding: 14px 22px;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, background 0.3s;
+      cursor: pointer;
+    }
+    .skills-list li:hover {
+      background: #3498db;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .project {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+      margin-bottom: 12px;
+      color: #3498db;
+    }
+    .project p {
+      font-size: 0.95rem;
+    }
+
+    /* Resume Button */
+    .resume a {
+      display: block;
+      text-align: center;
+      background: #3498db;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      max-width: 220px;
+      margin: auto;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .resume a:hover {
+      background: #2c3e50;
+      transform: scale(1.05);
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>BAIRAVI S</h1>
+    <p>Electronics and Communication Engineer | Web Developer | Innovator</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="D:\web engineering\lab experiment\New folder\BAIRAVI IMAGE.jpg" alt="Bairavi">
+    <p>Hello! I am an Electronics and Communication Engineer with strong foundations in VLSI, Embedded Systems, IoT, and Web Development.  
+       My interests lie in circuit design, signal processing, and innovative applications that bridge electronics with modern technologies.  
+       I enjoy solving real-world problems by integrating hardware and software solutions.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>VLSI Design</li>
+      <li>Embedded Systems</li>
+      <li>IoT Development</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>C Programming</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>IoT Smart Water Grid</h3>
+        <p>Monitors water tank levels and automates pump control with cloud integration.</p>
+      </div>
+      <div class="project">
+        <h3>Algae-Based Bio Battery</h3>
+        <p>Developed a sustainable energy solution using algae as a natural bio-source for power generation, 
+           focusing on eco-friendly alternatives to conventional batteries.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Personal website created using HTML & CSS to showcase skills and projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download>Download Resume</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: bairavis767@email.com</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bairavi. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
